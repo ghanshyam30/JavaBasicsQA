@@ -73,9 +73,9 @@ public class Vehicle extends Transport{
         ERROR we will get here is
         the method editTicket() is undefined for the type BasicInterface
         */
-        String SubStr1 = new String("Tutorials" );
+        String SubStr1 = new String("tutorials" );
         System.out.print("Found Last Index :" );
-        //System.out.println( Str.lastIndexOf( SubStr1 ));
+        System.out.println( SubStr1.lastIndexOf( "t"));
         
         
     }
