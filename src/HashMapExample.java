@@ -1,4 +1,6 @@
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Map.Entry;
 
 public class HashMapExample {
@@ -44,8 +46,15 @@ public class HashMapExample {
 		
 		
 		/*
-		 * OPERATIONS on Hashmaps
-		 * 
+		 * OPERATIONS on Hashmap
+		 * Iterator iterHash = someHash.entrySet().iterator();
+		 * In the iterator creation you can see that type of iterator is Map.Entry and you need to specify which kind of entry is it to avoid warnings
 		 */
+		Iterator<Map.Entry<String,String>> iterHash = someHash.entrySet().iterator();
+		while(iterHash.hasNext())
+		{
+			Map.Entry<String,String> someMap = (Map.Entry<String, String>) iterHash.next();
+			System.out.println("Object received: key= "+someMap.getKey() + " and value= "+someMap.getValue());
+		}
 	}
 }
