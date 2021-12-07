@@ -11,11 +11,11 @@ public class Vehicle extends Transport{
         this.vehicleNumber = vehicleNumber;
         
     }
-    public double getCharges(int vehicleNumber){
-        if(vehicleNumber<100){
+    public double getCharges(){
+        if(this.vehicleNumber<100){
             return 2000.0;
         }
-        else if(vehicleNumber>100 && vehicleNumber<500){
+        else if(this.vehicleNumber>100 && this.vehicleNumber<500){
             return 3500.50;
         }
         else{
