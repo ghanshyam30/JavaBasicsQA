@@ -50,3 +50,13 @@ public class ArrayListExample {
 		}
 	}
 }
+
+
+/* OUTPUT:
+Array after adding 2 items			: [1, 2]
+Array after adding an item to 0th location	: [33, 1, 2]
+Array after updating 0th element to 3 value 	: [3, 1, 2]
+Array after removing the element at 0th location: [1, 2]
+This item= 1
+This item= 2
+*/
