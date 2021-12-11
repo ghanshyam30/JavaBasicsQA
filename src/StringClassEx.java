@@ -12,10 +12,17 @@ public class StringClassEx {
 	      result = str2.compareTo( str3 );
 	      System.out.println("Comparison result of 2 strings Hello and World is = "+result);
 	      
-	      System.out.println(str1.compareTo("Strings are not"));
+	      System.out.println("Compare inline between Hello and Strings are not equal:"+ str1.compareTo("Strings are not"));
 	      
 	      // Equals
 	      boolean result_bool = str1.equals(str2);
 	      System.out.println("Equals result of 2 strings Hello and Hello is = "+result_bool);
 	   }
-	}
+}
+
+/* OUTPUT
+Comparison result of 2 strings Hello and Hello is = 0
+Comparison result of 2 strings Hello and World is = -15
+Compare inline between Hello and Strings are not equal:-11
+Equals result of 2 strings Hello and Hello is = true
+*/
